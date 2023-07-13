@@ -69,9 +69,7 @@ class NFTThumbnail extends HTMLElement {
   }
 
   setOwned(owned) {
-    if (owned) {
-      this.owned_.style.visibility = 'visible';
-    }
+    (owned) && (this.owned_.style.visibility = 'visible');
   }
 };
 
